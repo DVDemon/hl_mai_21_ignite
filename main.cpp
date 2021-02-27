@@ -5,8 +5,7 @@
 int main([[maybe_unused]] int argc, [[maybe_unused]] char * argv[]){
 
     ignite::thin::IgniteClientConfiguration cfg;
-    //cfg.SetEndPoints("40.88.137.77:10800");
-    cfg.SetEndPoints("192.168.40.129:10800");
+    cfg.SetEndPoints("127.0.0.1:10800");
     try{
     ignite::thin::IgniteClient client = ignite::thin::IgniteClient::Start(cfg);
 
